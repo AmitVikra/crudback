@@ -1,4 +1,7 @@
 package in.amitvikram.crud.repository;
 
-public interface EntityDemoRepo {
+import in.amitvikram.crud.entity.EntityDemoClass;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface EntityDemoRepo extends JpaRepository<EntityDemoClass, Long> {
 }
